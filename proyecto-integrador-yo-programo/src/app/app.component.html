@@ -1,0 +1,131 @@
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+  <img width="150" alt="AP Logo" src="../assets/APLogo.png" />
+  <h4>#YoProgramo</h4>
+  <div class="spacer"></div>
+  <a class="app-logo" target="_blank" rel="noopener" href="https://github.com/SFCR23" title="Github">
+    <img width="24" alt="Github Logo" src="../assets/github.png" />
+  </a>
+  <a class="app-logo" target="_blank" rel="noopener"
+    href="https://www.linkedin.com/in/silvia-florencia-cesarini-rosales-91432026b/" title="LinkedIn">
+    <img width="24" alt="LinkedIn Logo" src="../assets/linkedin.png" />
+  </a>
+  <button class="login-button btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#loginModal">Iniciar
+    Sesión</button>
+</div>
+
+<!-- Login Modal-->
+<div class="modal" tabindex="-1" id="loginModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Iniciar sesión</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <input class="form-control mb-3" type="text" placeholder="E-mail">
+        <input class="form-control" type="password" placeholder="Contraseña">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Ingresar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="content" role="main">
+  <div class="row">
+    <img src="../assets/pexels-neo-2653362.jpg" width="100%" alt="">
+    <div class="col-xs-12 col-sm-2">
+      <img src="../assets/1679688452862.jpg" class="img-fluid foto-perfil">
+    </div>
+    <div class="col-xs-12 col-sm-2">
+      <p id="nombre">Silvia Florencia, Cesarini Rosales</p>
+      <p>Full Stack Developer Jr</p>
+    </div>
+    <div class="col-xs-12 col-sm-8">
+      <span>
+        <h1>Acerca de</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, molestias voluptate, illum itaque, libero
+          officiis quam impedit repudiandae sed harum hic. Ipsam autem reiciendis ut aspernatur minus nisi aliquid et?
+        </p>
+      </span>
+    </div>
+  </div>
+  <div class="row">
+    <h1 id="experiencia">Experiencia laboral</h1>
+
+    <div class="col-lg-11">
+      <ul>
+        <li>
+          <h3>Trabajo 1</h3>
+          <h4>(Años)</h4>
+        </li>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora commodi quae laboriosam dolores optio
+          eligendi possimus reprehenderit, voluptate dolore beatae error illo mollitia dolorum, consequatur voluptatem
+          iste cumque veniam odio.</p>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <h1 id="educacion">Educación</h1>
+
+    <div class="col-lg-11">
+      <ul>
+        <li>
+          <h3>Full Stack Developer Junior</h3>
+          <h4>(2022 - 2023)</h4>
+        </li>
+        <p>Ministerio de Economía Argentina e INTI: Argentina Programa#YoProgramo</p>
+      </ul>
+    </div>
+    <div class="row">
+      <div class="col-lg-11">
+        <h1>Hard and Soft Skills</h1>
+
+        <div id="skill-html" class="skill">
+          <svg width="200" height="200" viewport="0 0 100 100" version="1.1"
+            xmlns="http://www.w3.org/2000/svg">
+            <circle r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0">
+            </circle>
+            <circle class="barra" r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0"
+              style="stroke-dashoffset: 226.195px;"></circle>
+          </svg>
+          <img src="../assets/png-transparent-logo-html-html5.png" alt="">
+        </div>
+        <div id="skill-css" class="skill">
+          <svg width="200" height="200" viewPort="0 0 100 100" version="1.1"
+            xmlns="http://www.w3.org/2000/svg">
+            <circle r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0">
+            </circle>
+            <circle class="barra" r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48"
+              stroke-dashoffset="0"></circle>
+          </svg>
+        </div>
+        <div id="skill-js" class="skill">
+          <svg width="200" height="200" viewPort="0 0 100 100" version="1.1"
+            xmlns="http://www.w3.org/2000/svg">
+            <circle r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0">
+            </circle>
+            <circle class="barra" r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48"
+              stroke-dashoffset="0"></circle>
+          </svg>
+        </div>
+      </div>
+      <div class="row">
+        <h1>Proyectos realizados</h1>
+        <div class="container">
+          <div>
+            <h2>Portafolio Web</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aspernatur ipsam animi, atque officia
+              perspiciatis repellat officiis expedita consectetur, quis consequuntur? Eveniet fugit provident deleniti
+              corporis ipsum atque aliquid rerum?</p>
+          </div>
+          <div>
+            <img id="proyecto-portafolio" src="" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <router-outlet></router-outlet>

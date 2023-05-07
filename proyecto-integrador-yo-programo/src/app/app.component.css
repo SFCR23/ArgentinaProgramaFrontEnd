@@ -1,0 +1,95 @@
+.spacer {
+    flex: 1 0 auto;
+}
+.toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #335b80;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+.toolbar .app-logo,
+.login-button {
+    margin-right: 16px;
+}
+
+.toolbar .app-logo:hover {
+    opacity: 0.8;
+}
+
+.content {
+    display: flex;
+    display: block;
+    margin: 0 auto 32px;
+    padding: 0 16px;
+    width: 1250px;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.foto-perfil {
+    border-radius: 50%;
+    margin-top: -50%;
+    margin-left: 4%;
+    box-shadow: 3px 3px 3px rgb(38, 43, 46);
+}
+
+#nombre {
+    font-weight: bold;
+    margin-top: 7%;
+}
+
+.row {
+    padding: 20px;
+}
+
+div {
+    background-color: #729ca3;
+}
+
+#experiencia {
+    color: #000000;
+}
+
+.skill svg circle {
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset 1s linear;
+    stroke: #666;
+    stroke-width: 1em;
+}
+
+#skill-html svg .barra {
+    stroke: #f64a1d;
+}
+#skill-html img {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    top: 0;
+    left: 0;
+}
+#skill-css svg .barra {
+    stroke: #008ed1;
+}
+#skill-js svg .barra {
+    stroke: #f2d501;
+}
+
+.skill {
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    margin: 2em 4em;
+    box-shadow: 0 0 1em black;
+    border-radius: 100%;
+    position: relative;
+    text-align: center;
+}
+
